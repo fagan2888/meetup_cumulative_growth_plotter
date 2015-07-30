@@ -9,6 +9,8 @@ You'll get an output like:
 
 ![img](pydatalondon_membership_growth.png "img")
 
+NOTE the python file has an embedded list of dates for our meetup group, you'll want to edit/remove these.
+
 Which might look like:
 
     $ python plot_meetup_cumulative_growth.py PyData-London-Meetup_Member_List_on_07-30-15.xls
