@@ -32,19 +32,22 @@ if __name__ == "__main__":
 
     cum_sum = df['Member growth'].cumsum()
     plt.annotate("(1st Conference Feb 22nd)", (dt(2014, 5, 5), 0))
-    plt.annotate("2nd Conference", (dt(2015,6,20), 1640), ha="right")
+    plt.annotate("2nd Conference", (dt(2015,6,20), 1540), ha="right")
+    plt.annotate("3rd Conference", (dt(2016,5,6), 3100), ha="right")
 
     x_dt = dt(2014,6,3)
     plt.annotate("1st Meetup!", (x_dt, cum_sum[x_dt].max()), ha="right")
-    meetups = [dt(2014, 7, 1), dt(2014,8,5), dt(2014,9,2),
-               dt(2014, 10,7), dt(2014,11,4), dt(2014,12,2),
-               dt(2015, 1, 6), dt(2015,2,3), dt(2015,3,3),
-               dt(2015,4,7), dt(2015,5,5), dt(2015,7,7)]
-    for meetup_dt in meetups:
-        plt.annotate("M", (meetup_dt, cum_sum[meetup_dt].max()), ha="right")
+    #meetups = [dt(2014, 7, 1), dt(2014,8,5), dt(2014,9,2),
+               #dt(2014, 10,7), dt(2014,11,4), dt(2014,12,2),
+               #dt(2015, 1, 6), dt(2015,2,3), dt(2015,3,3),
+               #dt(2015,4,7), dt(2015,5,5), dt(2015,7,7)]
+    #for meetup_dt in meetups:
+        #plt.annotate("M", (meetup_dt, cum_sum[meetup_dt].max()), ha="right")
 
     x_dt = dt(2015, 5, 25)
-    plt.annotate("Now Largest London Python Usergroup", (x_dt, cum_sum[x_dt].max()), ha="right")
+    plt.annotate("Largest London Python Usergroup", (x_dt, cum_sum[x_dt].max()), ha="right")
+    x_dt = dt(2016, 1, 10)
+    plt.annotate("Largest European Python Usergroup", (x_dt, cum_sum[x_dt].max()), ha="right")
 
     plt.xlim(xmin=datetime.datetime(2014,4,15))
     output_filename = os.path.splitext(args.filename)[0] + ".png"
