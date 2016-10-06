@@ -7,7 +7,7 @@ As a Meetup group admin go to "Members|Download membership list" and run:
 
 You'll get an output like:
 
-![img](pydatalondon_membership_growth.png "img")
+![img](PyData-London-Meetup_Member_List_on_10-06-16.png "img")
 
 NOTE the python file has an embedded list of dates for our meetup group, you'll want to edit/remove these.
 
