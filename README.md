@@ -1,4 +1,4 @@
-# meetup_cumulative_growth_plotter
+# PyDataLondon cumulative membership growth
 Plots cumulative growth of a meetup group with annotations
 
 As a Meetup group admin go to "Members|Download membership list" and run:

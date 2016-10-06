@@ -26,7 +26,7 @@ if __name__ == "__main__":
     df.sort(inplace=True)  # sort on the index
     df['Member growth'].cumsum().plot()
 
-    plt.title("PyDataLondon Cumulative Membership Growth")
+    plt.title("PyDataLondon Cumulative Membership Growth\n230 members attend each month")
     plt.ylabel("Membership")
     plt.tight_layout()
 
